@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Expense Tracker</title>
+</head>
+<body>
+  <h1>Expense Tracker</h1>
+  <div class="balance-container">
+    <p class="balance">Balance: ₹0.00</p>
+    <p class="income">Income: ₹0.00</p>
+    <p class="expense">Expense: ₹0.00</p>
+  </div>
+  <br>
+  <h2 class="history">History</h2>
+  <hr>
+  <h2 class="transaction">Add New Transaction</h2>
+  <hr>
+  <form action="/action_page.php">
+    <label for="text" id="text-label">Text:</label><br>
+    <input type="text" id="text" name="text" placeholder="Enter your text..."><br><br>
+    <label for="amount" id="amount-label">Amount:</label><br>
+    <p id="para">(negative - expense, positive - income)</p>
+    <input type="text" id="amount" name="amount" placeholder="Enter amount..."><br><br>
+    <button id="btn">Add Transaction</button>
+  </form>
+  <script src="script.js"></script>
+
+<Style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.body {
+  font-family: 'Arial', sans-serif;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  
+  margin-bottom: 20px;
+  background-color: #fc8803;
+  height:75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.balance-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  padding: 0 20px;
+  background-color: #03fc24;
+  height: 75px;
+  align-items: center;
+  
+}
+
+.balance, .income, .expense {
+  font-size: 25px;
+}
+
+.history, .transaction {
+  text-align: center;
+  margin: 20px 0 10px;
+}
+
+.form {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.input[type="text"] {
+  width: calc(100% - 22px);
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.input[type="submit"] {
+  width: 100%;
+  background: #8c7ae6;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+#btn{
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    height: 25px;
+    width: 150px;
+    font-size: 15px;
+}
+
+#text{
+    height: 25px;
+    width: 175px;
+    margin-top:10px;
+    border: 1.5px solid black;
+}
+
+#amount{
+    height: 25px;
+    width: 175px;
+    margin-top:10px;
+    border: 1.5px solid black;
+}
+
+#text-label{
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    
+}
+
+#amount-label{
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+#para{
+    font-size: 20px;
+}
+</style>
+</body>
+</html>
